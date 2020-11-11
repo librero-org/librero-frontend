@@ -11,24 +11,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@100;400;600&display=swap" rel="stylesheet">
 </head>
 
-<body onresize="updateScreenSizeItem()">
-    <div class="datos">
-        <div id="countdown"></div>
-        <div id="screensize"></div>
-    </div>
-    <br />
-    <div class="container">
-        <nav class="nav-main">
+<body>
+    <nav class="nav-main">
+        <div class="nav brand">
             <img src="assets/img/libros.png" title="Logo" class="nav-brand">
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#" target="_parent">Libros</a></li>
-                <li class="nav-item"><a href="#" target="_parent">Acerca de</a></li>
-                <li class="nav-item"><a href="#" target="_parent">Contáctanos</a></li>
-            </ul>
-            <ul class="nav-menu-right">
-                <li><a href=""><i class="fas fa-search"></i></a></li>
-            </ul>
-        </nav>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href=""></a>Home</li>
+            <li class="nav-item"><a href=""></a>Libros</li>
+            <li class="nav-item"><a href=""></a>Acerca de</li>
+            <li class="nav-item"><a href=""></a>Contáctanos</li>
+        </ul>
+        <ul class="nav-menu-right">
+            <li class="nav-item">
+                <div class="popup" onclick="myFunction()"><i class="fas fa-search"></i>
+                    <span class="popuptext" id="myPopup">A Simple Popup!</span>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
         <header class="header">
             <div class="text-header">
                 <h1>Encuentra los mejores libros</h1>
