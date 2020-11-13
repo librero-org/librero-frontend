@@ -1,22 +1,24 @@
-let totalTime = 5;
-const countdownitem = document.getElementById("countdown");
-const screensizeitem = document.getElementById("screensize");
-window.onload = updateClock;
-
-function updateClock() {
-    countdownitem.innerHTML = "Se refrescara en: " + totalTime;
-    if (totalTime == 0) {
-    } else {
-        totalTime -= 1;
-        setTimeout("updateClock()", 1000);
-    }
+const menuBtn = document.querySelector(".menu-icon span");
+const searchBtn = document.querySelector(".search-icon");
+const cancelBtn = document.querySelector(".cancel-icon");
+const items = document.querySelector(".nav-items");
+const form = document.querySelector("form");
+menuBtn.onclick = () => {
+    items.classList.add("active");
+    menuBtn.classList.add("hide");
+    searchBtn.classList.add("hide");
+    cancelBtn.classList.add("show");
 }
-function refresh() {
-    window.location.reload();
+cancelBtn.onclick = () => {
+    items.classList.remove("active");
+    menuBtn.classList.remove("hide");
+    searchBtn.classList.remove("hide");
+    cancelBtn.classList.remove("show");
+    form.classList.remove("active");
+    cancelBtn.style.color = "#ff3d00";
 }
-setInterval("refresh()",5000);
-
-/* Resolución de pantalla */
-function updateScreenSizeItem() {
-    screensizeitem.innerHTML = "Resolución: " + window.innerWidth + "px x " + window.innerHeight + "px";
+searchBtn.onclick = () => {
+    form.classList.add("active");
+    searchBtn.classList.add("hide");
+    cancelBtn.classList.add("show");
 }
