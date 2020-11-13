@@ -2,33 +2,41 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Librero</title>
-    <!--  Font Awesome  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- Style -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@100;400;600&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.svg" type="image/x-icon">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/71211afe2d.js" crossorigin="anonymous"></script>
 </head>
 
-<body onresize="updateScreenSizeItem()">
-    <div class="datos">
-        <div id="countdown"></div>
-        <div id="screensize"></div>
-    </div>
-    <br />
+<body>
+    <nav class="navbar">
+        <div class="menu-icon">
+            <span class="fas fa-bars"></span>
+        </div>
+        <img src="assets/img/librero_logo.svg" alt="" srcset="">
+        <div class="nav-items">
+            <li><a href="#"><span class="fas fa-home"></span>Home</a></li>
+            <li><a href="#"><span class="fas fa-book"></span>Libros</a></li>
+            <li><a href="#"><span class="fas fa-clipboard"></span>Pedidos</a></li>
+            <li><a href="#"><span class="fas fa-address-card"></span>Contacto</a></li>
+        </div>
+        <div class="search-icon">
+            <span class="fas fa-search"></span>
+        </div>
+        <div class="cancel-icon">
+            <span class="fas fa-times"></span>
+        </div>
+        <form action="#">
+            <input type="search" class="search-data" placeholder="Search" required>
+            <button type="submit" class="fas fa-search"></button>
+        </form>
+    </nav>
     <div class="container">
-        <nav class="nav-main">
-            <img src="assets/img/libros.png" title="Logo" style="width: 50px;">
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#" target="_parent">Libros</a></li>
-                <li class="nav-item"><a href="#" target="_parent">Acerca de</a></li>
-                <li class="nav-item"><a href="#" target="_parent">Contáctanos</a></li>
-            </ul>
-            <ul class="nav-menu-right">
-                <li><a href=""><i class="fas fa-search"></i></a></li>
-            </ul>
-        </nav>
         <header class="header">
             <div class="text-header">
                 <h1>Encuentra los mejores libros</h1>
@@ -36,54 +44,52 @@
                     omnis sed minus vel reiciendis tempora eum, rem, debitis fugit dolor sit dicta fuga, quisquam
                     adipisci.
                 </p>
-                <br>
-                <a href="#" class="btn">Leer más <i class="fas fa-angle-double-right"></i></a>
             </div>
         </header>
         <div class="main-cards">
             <div class="card-item">
                 <img src="assets/img/uno.jpg" alt="">
                 <div class="card-content">
-                    <span>Lorem, ipsum dolor.</span>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis itaque aspernatur
-                        repellendus,
-                        quod perferendis rerum tempora laboriosam magni. Animi, maxime.</p>
+                    <span class="card-title"><a href="#">Lorem ipsum dolor sit amet consectetur.</a></span>
+                    <span class="card-author"><a href="#">Lorem, ipsum dolor.</a></span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum provident molestiae, ipsum quis esse
+                        adipisci? Omnis, vel dolorem!</p>
                 </div>
             </div>
             <div class="card-item">
                 <img src="assets/img/dos.jpg" alt="">
                 <div class="card-content">
-                    <span>Lorem, ipsum dolor.</span>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis itaque aspernatur
-                        repellendus,
-                        quod perferendis rerum tempora laboriosam magni. Animi, maxime.</p>
+                    <span class="card-title"><a href="#">Lorem ipsum dolor sit amet consectetur.</a></span>
+                    <span class="card-author"><a href="#">Lorem, ipsum dolor.</a></span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum provident molestiae, ipsum quis esse
+                        adipisci? Omnis, vel dolorem!</p>
                 </div>
             </div>
             <div class="card-item">
                 <img src="assets/img/tres.jpg" alt="">
                 <div class="card-content">
-                    <span>Lorem, ipsum dolor.</span>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis itaque aspernatur
-                        repellendus,
-                        quod perferendis rerum tempora laboriosam magni. Animi, maxime.</p>
+                    <span class="card-title"><a href="#">Lorem ipsum dolor sit amet consectetur.</a></span>
+                    <span class="card-author"><a href="#">Lorem, ipsum dolor.</a></span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum provident molestiae, ipsum quis esse
+                        adipisci? Omnis, vel dolorem!</p>
                 </div>
             </div>
             <div class="card-item">
                 <img src="assets/img/cuatro.jpg" alt="">
                 <div class="card-content">
-                    <span>Lorem, ipsum dolor.</span>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis itaque aspernatur
-                        repellendus,
-                        quod perferendis rerum tempora laboriosam magni. Animi, maxime.</p>
+                    <span class="card-title"><a href="#">Lorem ipsum dolor sit amet consectetur.</a></span>
+                    <span class="card-author"><a href="#">Lorem, ipsum dolor.</a></span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum provident molestiae, ipsum quis esse
+                        adipisci? Omnis, vel dolorem!</p>
                 </div>
             </div>
             <div class="card-item">
                 <img src="assets/img/cinco.jpg" alt="">
                 <div class="card-content">
-                    <span>Lorem, ipsum dolor.</span>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis itaque aspernatur
-                        repellendus,
-                        quod perferendis rerum tempora laboriosam magni. Animi, maxime.</p>
+                    <span class="card-title"><a href="#">Lorem ipsum dolor sit amet consectetur.</a></span>
+                    <span class="card-author"><a href="#">Lorem, ipsum dolor.</a></span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum provident molestiae, ipsum quis esse
+                        adipisci? Omnis, vel dolorem!</p>
                 </div>
             </div>
         </div>
@@ -92,8 +98,8 @@
         <div class="footer-container">
             <ul>
                 <li>
-                    <!-- <img src="assets/img/libros.png" width="10px" alt=""> -->
-                    <img src="assets/img/libros.png" alt="">
+                    <!-- <img src="assets/img/librero_logo.svg" width="10px" alt=""> -->
+                    <img src="assets/img/librero_logo.svg" alt="">
                 </li>
             </ul>
             <ul>
@@ -121,7 +127,7 @@
     <footer class="footer">
         <h6>Libreria Copyright <i class="far fa-copyright"></i></h6>
     </footer>
+    <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
-<script type="text/javascript" src="assets/js/main.js"></script>
 
 </html>
