@@ -41,16 +41,14 @@
         <p>Si tiene alguna duda o comntario, puede ponerse en contacto con nosotros.</p><br>
         <div class="contact-container">
             <div class="form-contact">
-                <form action="">
-                    <p>Por favor, llena los campos requeridos.</p>
-                    <h4>Nombre: *</h4>
-                    <input type="text" class="fas fa-address-card" required>
-                    <h4>E-mail: </h4>
-                    <input type="text" class="fas fa-address-card">
-                    <h4>Mensaje: *</h4>
-                    <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
-                    <button type="submit" class="fas fa-search">&nbsp; Enviar</button>
-                </form>
+                <p>Por favor, llena los campos requeridos.</p>
+                <h4>Nombre: *</h4>
+                <input type="text" class="fas fa-address-card" id="name">
+                <h4>E-mail: </h4>
+                <input type="text" class="fas fa-address-card" id="email">
+                <h4>Mensaje: *</h4>
+                <textarea name="" rows="4" cols="50" id="message"></textarea>
+                <button type="submit" class="fas fa-search" onclick="sendEmail()">&nbsp; Enviar</button>
             </div>
         </div>
     </div>
