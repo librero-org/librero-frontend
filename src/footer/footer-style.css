@@ -1,4 +1,7 @@
 .footer-div {
+  background: #171c24;
+  text-align: center;
+  font-size: 18px;
   padding: 20px 0;
 }
 
@@ -25,6 +28,7 @@
   text-align: center;
   padding: 10px 0;
 }
+
 @media only screen and (min-width:0px) and (max-width:700px) {
   .footer-div .footer-container {
     display: grid;
@@ -35,10 +39,3 @@
     height: 45px;
   }
 }
-
-.footer-div {
-  background: #171c24;
-  text-align: center;
-  font-size: 18px;
-}
-

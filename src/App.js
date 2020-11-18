@@ -1,14 +1,14 @@
 import './App.css';
-import {FooterComponent} from './footer/footer-component';
-import {HeaderComponent} from './header/header-component';
-import {NavbarComponent} from './navbar/navbar-component';
+import { FooterComponent } from './footer/footer-component';
+import { HomeComponent } from './home/home-component';
+import { NavbarComponent } from './navbar/navbar-component';
 
 function App() {
   return (
     <div>
       <NavbarComponent></NavbarComponent>
       <div className='container'>
-        <HeaderComponent></HeaderComponent>
+        <HomeComponent></HomeComponent>
       </div>
       <FooterComponent></FooterComponent>
     </div>

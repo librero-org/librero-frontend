@@ -27,6 +27,8 @@ ul, li {
   width: 95%;
   margin: auto;
   padding: 20px 0;
+  text-align: justify;
+  color: #ffffff;
 }
 
 .container h2, p {
