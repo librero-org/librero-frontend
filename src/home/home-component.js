@@ -1,5 +1,5 @@
 import './home-style.css';
-import { FooterComponent } from '../cards-book/footcards-book-component';
+import { CardsBookComponent } from '../cards-book/cards-book-component';
 
 export function HomeComponent() {
   return (

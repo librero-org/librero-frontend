@@ -1,2 +1,5 @@
 # Ignoring directories
 node_modules/
+
+# Ignoring file logs
+debug.log
