@@ -1,26 +1,3 @@
-/* General config */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Grandstander', cursive;
-}
-
-body {
-  color: #ffffff;
-  background-color: #f3f3f3;
-}
-
-a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-ul, li {
-  list-style: none;
-}
-
 .navbar button, .form-contact button {
   padding: 0 15px;
   color: #fff;
@@ -35,9 +12,7 @@ ul, li {
   background: #e63600;
 }
 
-/*navbar and footer-div*/
-
-.navbar, .navbar form, .footer-div {
+.navbar, .navbar form {
   background: #171c24;
   text-align: center;
   font-size: 18px;
@@ -65,7 +40,6 @@ ul, li {
   padding: 0 15px;
   gap: 25px;
 }
-
 .navbar .nav-items li a:hover {
   color: #ff3d00;
 }
@@ -95,174 +69,9 @@ ul, li {
 
 .navbar .menu-icon span, .navbar .nav-items span, .navbar .cancel-icon, .navbar .search-icon {
   margin: 0 50px;
-  cursor: pointer;
+  ursor: pointer;
   display: none;
 }
-
-/* container */
-
-.container {
-  width: 95%;
-  margin: auto;
-  padding: 20px 0;
-}
-
-.container h2, p {
-  color: #000000;
-}
-
-/* header */
-
-.header {
-  width: 100%;
-  height: 450px;
-  background: no-repeat center center/cover url("../../assets/img/header.jpg");
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: flex-end;
-  padding-bottom: 50px;
-  margin-bottom: 20px;
-  font-weight: bold;
-}
-
-.header .text-header {
-  background-color: #bebebe;
-  opacity: .9;
-  color: #2c2c2c;
-  padding: 20px 0;
-}
-
-.header .text-header h1 {
-  padding-bottom: 20px;
-}
-
-.header .text-header p {
-  margin: 0 20px;
-}
-
-/* cards */
-
-.main-cards {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  margin: 20px 0;
-}
-
-.main-cards .card-item {
-  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.616);
-  transition: 0.3s;
-  background-color: #ffffff;
-  border-radius: 3px;
-  text-align: justify;
-  color: #181818;
-  display: flex;
-  height: 160px;
-}
-
-.main-cards .card-item:hover {
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.616);
-}
-
-.main-cards .card-item img {
-  border-radius: 3px 0 0 3px;
-  height: 160px;
-  width: 100px;
-}
-
-.main-cards .card-item .card-title {
-  margin-top: 5px;
-  font-size: 15px;
-}
-
-.main-cards .card-item .card-author {
-  margin: 1px 0 10px 0;
-  font-size: 10px;
-}
-
-.main-cards .card-item a {
-  color: #575757;
-  font-weight: bold;
-}
-
-.main-cards .card-item a:hover {
-  text-decoration: underline;
-}
-
-.main-cards .card-item .card-content {
-  padding: 0 10px 10px 10px;
-  display: flex;
-  flex-direction: column;
-  font-size: 12px;
-}
-
-/* form contact */
-
-.contact-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.container .form-contact {
-  background-color: #171c24;
-  border-radius: 5px;
-  width: 40%;
-  padding: 20px;
-}
-
-.container .form-contact p {
-  text-align: justify;
-  color: #ffffff;
-}
-
-.form-contact input, .form-contact textarea {
-  width: 100%;
-  padding: 0 10px;
-  margin: 10px 0;
-  border-radius: 5px;
-  background: #ffffff;
-  border: none;
-  font-family: 'Grandstander', cursive;
-}
-
-.form-contact input, .form-contact button {
-  height: 30px;
-}
-
-/* footer */
-
-.footer-div {
-  padding: 20px 0;
-}
-
-.footer-div .footer-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
-}
-
-.footer-div .footer-container img {
-  height: 85px;
-}
-
-.footer-div .footer-container h2 {
-  text-transform: uppercase;
-  font-weight: bold;
-  padding-bottom: 10px;
-}
-
-.footer {
-  background-color: #000000;
-  color: #adadad;
-  font-weight: bold;
-  text-align: center;
-  padding: 10px 0;
-}
-
-/* Media Screen */
 
 @media only screen and (min-width:0px) and (max-width:470px) {
   .navbar img {
@@ -348,15 +157,6 @@ ul, li {
   .navbar .cancel-icon.show {
     display: block;
   }
-  /* cards  and footer mobile*/
-  .main-cards, .footer-div .footer-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 10px;
-  }
-  .footer-div .footer-container img {
-    height: 45px;
-  }
 }
 
 @media only screen and (min-width:701px) and (max-width:1200px) {
@@ -410,11 +210,5 @@ ul, li {
   }
   .navbar .cancel-icon.show {
     display: block;
-  }
-  .main-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    margin: 20px 0;
   }
 }

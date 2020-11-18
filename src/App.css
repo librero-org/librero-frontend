@@ -1,0 +1,34 @@
+/* General config */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Grandstander', cursive;
+}
+
+body {
+  color: #ffffff;
+  background-color: #f3f3f3;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+ul, li {
+  list-style: none;
+}
+
+/* container */
+
+.container {
+  width: 95%;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.container h2, p {
+  color: #000000;
+}
