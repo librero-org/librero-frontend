@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Librero",
+  "name": "Free Web for share books",
   "icons": [
     {
       "src": "favicon.svg",

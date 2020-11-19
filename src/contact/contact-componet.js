@@ -4,7 +4,7 @@ export function ContactComponent() {
     return (
         <div>
             <h2>Contáctanos</h2>
-            <p>Si tiene alguna duda o comntario, puede ponerse en contacto con nosotros.</p>
+            <p>Si tiene alguna duda o comentario, puede ponerse en contacto con nosotros.</p>
             <br />
             <div className="contact-container">
                 <div className="form-contact">
