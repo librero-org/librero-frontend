@@ -7,7 +7,7 @@ export function FooterComponent() {
                 <div className="footer-container">
                     <ul>
                         <li>
-                            <img src="./librero_logo.svg" alt="" />
+                            <img src="../img/librero_logo.svg" alt="" />
                         </li>
                     </ul>
                     <ul>
@@ -23,9 +23,9 @@ export function FooterComponent() {
                             <h2>Follow me</h2>
                         </li>
                         <li>
-                            <a href="#"><i className="fab fa-facebook"></i></a>
-                            <a href="#"><i className="fab fa-twitter"></i></a>
-                            <a href="#"><i className="fab fa-instagram"></i></a>
+                            <a href="./"><i className="fab fa-facebook"></i></a>
+                            <a href="./"><i className="fab fa-twitter"></i></a>
+                            <a href="./"><i className="fab fa-instagram"></i></a>
                         </li>
                     </ul>
                 </div>

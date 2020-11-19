@@ -7,7 +7,7 @@ export function NavbarComponent() {
             <div className="menu-icon">
                 <span className="fas fa-bars"></span>
             </div>
-            <img src="./librero_logo.svg" alt=""></img>
+            <img src="../img/librero_logo.svg" alt="" />
             <ul className="nav-items">
                 <li><Link to="./"><span className="fas fa-home"></span>Home</Link></li>
                 <li><Link to=""><span className="fas fa-book"></span>Libros</Link></li>
