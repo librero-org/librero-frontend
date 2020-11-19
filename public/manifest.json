@@ -1,0 +1,14 @@
+{
+  "short_name": "Librero",
+  "name": "Free Web for share books",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "type": "image/svg+xml"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
