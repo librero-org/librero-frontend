@@ -9,7 +9,7 @@
 .form-contact {
   background-color: #171c24;
   border-radius: 5px;
-  width: 40%;
+  width: 55%;
   padding: 20px;
 }
 
@@ -44,4 +44,10 @@
 
 .form-contact input, .form-contact button {
   height: 30px;
+}
+
+@media only screen and (min-width:0px) and (max-width:750px) {
+  .form-contact {
+    width: 80%;
+  }
 }

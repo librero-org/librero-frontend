@@ -1,4 +1,5 @@
 import './contact-style.css';
+import { sendEmail } from "./sendEmail";
 
 export function ContactComponent() {
     return (
@@ -15,7 +16,7 @@ export function ContactComponent() {
                     <input type="text" className="fas fa-address-card" id="email" />
                     <h4>Mensaje: *</h4>
                     <textarea name="" rows="4" cols="50" id="message"></textarea>
-                    <button type="submit" className="fas fa-search" id="submit">&nbsp; Enviar</button>
+                    <button type="submit" className="fas fa-search" id="submit" onClick={sendEmail}>Enviar</button>
                 </div>
             </div>
         </div>
