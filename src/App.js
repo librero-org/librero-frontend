@@ -1,17 +1,20 @@
 import './App.css';
-import { FooterComponent } from './footer/footer-component';
-import { HomeComponent } from './home/home-component';
+import { BrowserRouter as Router, Route} from 'react-router-dom';
 import { NavbarComponent } from './navbar/navbar-component';
+import { HomeComponent } from './home/home-component';
+import { ContactComponent } from './contact/contact-componet';
+import { FooterComponent } from './footer/footer-component';
 
 function App() {
   return (
-    <div>
+    <Router>
       <NavbarComponent></NavbarComponent>
       <div className='container'>
-        <HomeComponent></HomeComponent>
+        <Route exact path="/" component={HomeComponent} />
+        <Route path="/contact" component={ContactComponent} />
       </div>
       <FooterComponent></FooterComponent>
-    </div>
+    </Router>
   );
 }
 
