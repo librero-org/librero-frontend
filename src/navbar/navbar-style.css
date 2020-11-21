@@ -79,6 +79,7 @@
     height: 22px;
   }
 }
+
 @media only screen and (min-width:471px) and (max-width:750px) {
   .navbar img {
     height: 25px;
