@@ -8,23 +8,18 @@ export class NavbarComponent extends React.Component {
     this.state = {showNavbar: false, showSearchInput: false};
   }
   closeNavbar = () => {
-    console.log('close navbar');
     this.setState({showNavbar: false});
   }
   showNavbar = () => {
-    console.log('show navbar');
     this.setState({showNavbar: true});
   }
   showSearchInput = () => {
-    console.log('show searchInput');
     this.setState({showSearchInput: true});
   }
   hideSearchInput = () => {
-    console.log('show searchInput');
     this.setState({showSearchInput: false});
   }
   onCancelButton = () => {
-    console.log('cancel button was clicked');
     this.hideSearchInput();
     this.closeNavbar();
   }
