@@ -1,45 +1,73 @@
 import './navbar-style.css';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { searchButton, cancelButton, menuButton, closeNavBar } from './functionButton';
 
-export function NavbarComponent() {
+export class NavbarComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {showNavbar: false, showSearchInput: false};
+  }
+  closeNavbar = () => {
+    console.log('close navbar');
+    this.setState({showNavbar: false});
+  }
+  showNavbar = () => {
+    console.log('show navbar');
+    this.setState({showNavbar: true});
+  }
+  showSearchInput = () => {
+    console.log('show searchInput');
+    this.setState({showSearchInput: true});
+  }
+  hideSearchInput = () => {
+    console.log('show searchInput');
+    this.setState({showSearchInput: false});
+  }
+  onCancelButton = () => {
+    console.log('cancel button was clicked');
+    this.hideSearchInput();
+    this.closeNavbar();
+  }
+
+  render() {
     return (
         <nav className="navbar">
-            <div id="menu-icono" className="menu-icon" onClick={menuButton}>
-                <span className="fas fa-bars" />
+            <div className="menu-icon">
+                <span className={this.state.showNavbar ? "fas fa-bars hide" : "fas fa-bars"} onClick={this.showNavbar} />
             </div>
             <img src="../img/librero_logo.svg" alt="" />
-            <ul className="nav-items">
+            <ul className={this.state.showNavbar ? "nav-items active" : "nav-items"}>
                 <li>
-                    <Link to="./" onClick={closeNavBar}>
+                    <Link to="./" onClick={this.closeNavbar}>
                         <span className="fas fa-home" />Home
                     </Link>
                 </li>
                 <li>
-                    <Link to="" onClick={closeNavBar}>
+                    <Link to="" onClick={this.closeNavbar}>
                         <span className="fas fa-book" />Libros
                     </Link>
                 </li>
                 <li>
-                    <Link to="" onClick={closeNavBar}>
+                    <Link to="" onClick={this.closeNavbar}>
                         <span className="fas fa-clipboard" />Pedidos
                     </Link>
                 </li>
                 <li>
-                    <Link to="./contact" onClick={closeNavBar}>
+                    <Link to="./contact" onClick={this.closeNavbar}>
                         <span className="fas fa-address-card" />Contacto</Link>
                 </li>
             </ul>
-            <div className="search-icon" onClick={searchButton}>
+            <div className={this.state.showNavbar || this.state.showSearchInput ? "search-icon hide" : "search-icon"} onClick={this.showSearchInput}>
                 <span className="fas fa-search" />
             </div>
-            <div className="cancel-icon" onClick={cancelButton}>
-                <span className="fas fa-times" />
+            <div className={this.state.showNavbar || this.state.showSearchInput ? "cancel-icon show" : "cancel-icon"} onClick={this.onCancelButton}>
+                <span className="fas fa-times" style={this.state.showSearchInput ? {color: "#ff3d00"}: {}}/>
             </div>
-            <form action="#">
+            <form action="#" className={this.state.showSearchInput ? "active" : ""}>
                 <input type="search" className="search-data" placeholder="Search" required />
                 <button type="submit" className="fas fa-search"></button>
             </form>
         </nav>
     );
+  }
 }
