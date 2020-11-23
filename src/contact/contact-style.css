@@ -32,6 +32,15 @@
   background: #e63600;
 }
 
+.form-contact .icon_input {
+  float: right;
+  margin-right: 6px;
+  margin-top: -34px;
+  position: relative;
+  z-index: 2;
+  color: #171c24;
+}
+
 .form-contact input, .form-contact textarea {
   width: 100%;
   padding: 0 10px;
