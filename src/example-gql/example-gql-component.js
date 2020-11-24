@@ -1,26 +1,24 @@
-import { ApolloProvider, ApolloClient, InMemoryCache, gql } from '@apollo/client';
+import { useQuery, gql } from "@apollo/client";
 
-const client = new ApolloClient({
-    uri: ' http://localhost:4000/',
-    cache: new InMemoryCache()
-});
 
-client
-    .query({
-        query: gql`
-        {
-        hello
-        }
-    `
-    })
-    .then(result => console.log(result));
+function ExchangeRates() {
+  const { loading, error, data } = useQuery(gql`
+    query {
+      hello
+    }
+  `);
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error :(</p>;
+  console.log(data.hello);
+  return (<p>{data.hello}</p>);
+}
 
 export function ExampleGQLComponent() {
-    return (
-        <ApolloProvider client={client}>
-            <div>
-                <h2>My first Apollo app 🚀</h2>
-            </div>
-        </ApolloProvider>
-    )
+  return (
+    <div>
+      <h2>My first Apollo app 🚀</h2>
+      <ExchangeRates />
+    </div>
+  );
 }
