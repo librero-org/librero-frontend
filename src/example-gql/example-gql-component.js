@@ -3,7 +3,7 @@ import { useQuery, gql } from "@apollo/client";
 
 function ExchangeRates() {
   const { loading, error, data } = useQuery(gql`
-    query {
+    {
       hello
     }
   `);
