@@ -1,4 +1,5 @@
 import { LoaderComponent } from '../loader/loader-component';
+import { ScreenErrorComponent } from '../screen-error/screen-error-component';
 import { useQuery, gql } from "@apollo/client";
 
 
@@ -10,12 +11,14 @@ function ExchangeRates() {
   `);
 
   if (loading) {
-    return (<LoaderComponent></LoaderComponent>);
+    return (
+      <LoaderComponent></LoaderComponent>
+    );
   }
 
   if (error) {
     return (
-      <p>Error :(</p>
+      <ScreenErrorComponent></ScreenErrorComponent>
     );
   }
   console.log(data.hello);
