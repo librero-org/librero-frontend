@@ -21,14 +21,20 @@ function ExchangeRates() {
       <ScreenErrorComponent></ScreenErrorComponent>
     );
   }
-  console.log(data.hello);
-  return (<p>{data.hello}</p>);
+  if (data) {
+    console.log(data.hello);
+    return (
+      <div>
+        <h2>My first Apollo app 🚀</h2>
+        <p>{data.hello}</p>
+      </div>
+    );
+  }
 }
 
 export function ExampleGQLComponent() {
   return (
     <div>
-      <h2>My first Apollo app 🚀</h2>
       <ExchangeRates />
     </div>
   );
