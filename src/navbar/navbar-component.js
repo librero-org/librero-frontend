@@ -57,11 +57,6 @@ export class NavbarComponent extends React.Component {
               <span className="fas fa-atom" />Example GQL
             </Link>
           </li>
-          <li>
-            <Link to="./screen-error" onClick={this.closeNavbar}>
-              <span className="fas fa-atom" />ScreenError
-            </Link>
-          </li>
         </ul>
         <div className={this.state.showNavbar || this.state.showSearchInput ? "search-icon hide" : "search-icon"} onClick={this.showSearchInput}>
           <span className="fas fa-search" />
