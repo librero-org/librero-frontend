@@ -5,7 +5,7 @@ import { useQuery, gql } from "@apollo/client";
 function ExchangeRates() {
   const { loading, error, data } = useQuery(gql`
     {
-      hello
+      hellos
     }
   `);
 
@@ -13,7 +13,11 @@ function ExchangeRates() {
     return (<LoaderComponent></LoaderComponent>);
   }
 
-  if (error) return <p>Error :(</p>;
+  if (error) {
+    return (
+      <p>Error :(</p>
+    );
+  }
   console.log(data.hello);
   return (<p>{data.hello}</p>);
 }

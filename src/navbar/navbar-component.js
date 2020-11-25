@@ -58,8 +58,8 @@ export class NavbarComponent extends React.Component {
             </Link>
           </li>
           <li>
-            <Link to="./loader" onClick={this.closeNavbar}>
-              <span className="fas fa-atom" />Loader
+            <Link to="./screen-error" onClick={this.closeNavbar}>
+              <span className="fas fa-atom" />ScreenError
             </Link>
           </li>
         </ul>
