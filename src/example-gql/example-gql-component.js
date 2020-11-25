@@ -1,3 +1,4 @@
+import { LoaderComponent } from '../loader/loader-component';
 import { useQuery, gql } from "@apollo/client";
 
 
@@ -8,7 +9,10 @@ function ExchangeRates() {
     }
   `);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) {
+    return (<LoaderComponent></LoaderComponent>);
+  }
+
   if (error) return <p>Error :(</p>;
   console.log(data.hello);
   return (<p>{data.hello}</p>);
