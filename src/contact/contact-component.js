@@ -9,13 +9,13 @@ const SEND_CONTACT_EMAIL = gql`
 `;
 
 export function ContactComponent() {
-  const [mutate, data] = useMutation(SEND_CONTACT_EMAIL);
+  const [mutate, { data, loading, error }] = useMutation(SEND_CONTACT_EMAIL);
   let name, email, message;
 
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    console.log('name:\t' + name.value + '\nemail:\t' + email.value + '\nmensaje:\t' + message.value);
+    console.log('name:\t\t' + name.value + '\nemail:\t\t' + email.value + '\nmensaje:\t' + message.value);
 
     mutate({
       variables: {
@@ -27,8 +27,18 @@ export function ContactComponent() {
       }
     });
   }
-
-  if (data) console.log(data);
+  if (error) {
+    console.log('error');
+    //console.log(error);
+  }
+  if (loading) {
+    console.log('loading');
+    //console.log(loading);
+  }
+  if (data) {
+    console.log('data');
+    //console.log(data);
+  }
   return (
     <div>
       <h2>Contáctanos</h2>
