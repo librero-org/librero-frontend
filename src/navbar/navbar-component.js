@@ -53,8 +53,8 @@ export class NavbarComponent extends React.Component {
             </Link>
           </li>
           <li>
-            <Link to="./example-gql" onClick={this.closeNavbar}>
-              <span className="fas fa-atom" />Example GQL
+            <Link to="./loader" onClick={this.closeNavbar}>
+              <span className="fas fa-atom" />Modal
             </Link>
           </li>
         </ul>
