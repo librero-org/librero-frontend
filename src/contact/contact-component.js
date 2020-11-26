@@ -15,6 +15,8 @@ export function ContactComponent() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
+    console.log('name:\t' + name.value + '\nemail:\t' + email.value + '\nmensaje:\t' + message.value);
+
     mutate({
       variables: {
         data: {
