@@ -1,8 +1,8 @@
 import './App.css';
-import { BrowserRouter as Router, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { NavbarComponent } from './navbar/navbar-component';
 import { HomeComponent } from './home/home-component';
-import { ContactComponent } from './contact/contact-componet';
+import { ContactComponent } from './contact/contact-component';
 import { FooterComponent } from './footer/footer-component';
 
 function App() {
