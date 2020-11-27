@@ -52,11 +52,6 @@ export class NavbarComponent extends React.Component {
               <span className="fas fa-address-card" />Contacto
             </Link>
           </li>
-          <li>
-            <Link to="./loader" onClick={this.closeNavbar}>
-              <span className="fas fa-atom" />Modal
-            </Link>
-          </li>
         </ul>
         <div className={this.state.showNavbar || this.state.showSearchInput ? "search-icon hide" : "search-icon"} onClick={this.showSearchInput}>
           <span className="fas fa-search" />
