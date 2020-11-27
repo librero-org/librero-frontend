@@ -15,7 +15,6 @@ export function ContactComponent() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    //console.log('name:\t\t' + name.value + '\nemail:\t\t' + email.value + '\nmensaje:\t' + message.value);
 
     mutate({
       variables: {
@@ -26,6 +25,10 @@ export function ContactComponent() {
         }
       }
     });
+
+    name.value = "";
+    email.value = "";
+    message.value = "";
   }
 
   if (error) {
@@ -39,7 +42,7 @@ export function ContactComponent() {
   }
 
   if (loading) {
-    Swal.fire('Please wait')
+    Swal.fire('Por favor espere')
     Swal.showLoading()
   }
 
@@ -61,13 +64,14 @@ export function ContactComponent() {
         <form className="form-contact" onSubmit={handleSubmit} >
           <p>Por favor, llena los campos requeridos.</p>
           <h4>Nombre: *</h4>
-          <input type="text" name="name" ref={(node => name = node)} pattern="[a-zA-Z]" maxLength="40" required />
+          <input type="text" name="name" ref={(node => name = node)} pattern="[A-Za-z]{1,40}" title="Solo letras mayúsculas o minúsculas" maxLength="40" required />
           <span className="fas fa-address-card icon_input"></span>
           <h4>E-mail: </h4>
-          <input type="email" name="email" ref={(node => email = node)}  pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$" required />
-          <span className="fas fa-envelope-open-text icon_input"></span>
+          <input type="email" name="email" ref={(node => email = node)} required />
+          <span className="fas fa-at icon_input"></span>
           <h4>Mensaje: *</h4>
-          <textarea name="message" rows="4" cols="50" ref={(node => message = node)} maxLength="500" required />
+          <textarea name="message" ref={(node => message = node)} maxLength="500" required />
+          <span className="fas fa-edit icon_textarea"></span>
           <button type="submit" className="fas fa-search"> Enviar</button>
         </form>
       </div>
