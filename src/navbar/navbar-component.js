@@ -63,6 +63,12 @@ export class NavbarComponent extends React.Component {
               Contacto
             </Link>
           </li>
+          <li>
+            <Link to="./uploader-books" onClick={this.closeNavbar}>
+              <span className="fas fa-upload" />
+              Compartir libros
+            </Link>
+          </li>
         </ul>
         <div
           className={
