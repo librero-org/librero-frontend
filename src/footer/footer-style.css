@@ -9,10 +9,21 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
+  color: #ffffff;
 }
 
 .footer-div .footer-container img {
   height: 85px;
+}
+
+.footer-div .footer-container a {
+  color: #ffffff;
+  margin: 0px 20px;
+  font-size: 40px;
+}
+
+.footer-div .footer-container a:hover {
+  color: #acacac;
 }
 
 .footer-div .footer-container h2 {

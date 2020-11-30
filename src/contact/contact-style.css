@@ -11,30 +11,12 @@
   border-radius: 5px;
   width: 55%;
   padding: 20px;
-}
-
-.form-contact p {
-  text-align: justify;
   color: #ffffff;
-}
-
-.form-contact button {
-  padding: 0 15px;
-  color: #fff;
-  background: #ff3d00;
-  border: none;
-  border-radius: 2px;
-  cursor: pointer;
-  font-size: 17px;
-}
-
-.form-contact button:hover {
-  background: #e63600;
 }
 
 .form-contact .icon_input {
   float: left;
-  margin-left: -1px;
+  margin-left: 5px;
   margin-top: -40px;
   color: #171c24;
   border-radius: 4px 0px 0px 4px;
@@ -46,7 +28,7 @@
 
 .form-contact .icon_textarea {
   float: left;
-  margin-left: -1px;
+  margin-left: 5px;
   margin-top: -95px;
   color: #171c24;
   border-radius: 4px 0px 0px 4px;
@@ -73,11 +55,10 @@
 }
 
 .form-contact input, .form-contact textarea {
-  width: 96%;
+  width: 90%;
   padding: 0 10px;
-  margin: 10px 0px 10px 30px;
+  margin: 10px 0px 10px 40px;
   border-radius: 0px 5px 5px 0px;
-  background: #ffffff;
   border: none;
   z-index: 2;
 }

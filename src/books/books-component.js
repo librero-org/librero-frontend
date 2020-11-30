@@ -1,8 +1,5 @@
-import "./home-style.css";
-import "../cards-book/cards-book-style.css";
 import { useQuery, gql } from "@apollo/client";
 import { CardBookComponent } from "../cards-book/card-book-component";
-import { Link } from 'react-router-dom';
 
 const GET_BOOKS = gql`
   query GetBooks {
@@ -38,24 +35,15 @@ function ExchangeRates() {
   }
 }
 
-export function HomeComponent() {
+export function BooksComponent() {
   return (
     <div>
-      <header className="header">
-        <div className="text-header">
-          <h1>Encuentra los mejores libros</h1>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id,
-            architecto quis. Nihil obcaecati quidem omnis sed minus vel
-            reiciendis tempora eum, rem, debitis fugit dolor sit dict a fuga,
-            quisquam adipisci.
-          </p>
-        </div>
-      </header>
+      <div className="title">
+      <h1>Encuentra los mejores libros aquí</h1>
+      <hr id="hr1"/>
+      <hr id="hr2"/>
+      </div>
       <ExchangeRates />
-      <Link to="./books">
-        <button type="submit" className="fas fa-angle-double-right"> Ver más</button>
-      </Link>
     </div>
   );
 }

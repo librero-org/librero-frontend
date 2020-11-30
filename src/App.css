@@ -1,4 +1,4 @@
-/* General config */
+/* General Config */
 
 * {
   margin: 0;
@@ -8,29 +8,62 @@
 }
 
 body {
-  color: #ffffff;
   background-color: #f3f3f3;
 }
 
 a {
   text-decoration: none;
-  color: #ffffff;
 }
 
 ul, li {
   list-style: none;
 }
 
-/* container */
-
 .container {
   width: 95%;
   margin: auto;
   padding: 20px 0;
   text-align: justify;
-  color: #ffffff;
 }
 
-.container h2, p {
-  color: #000000;
+button {
+  padding: 0 15px;
+  color: #fff;
+  background: #ff3d00;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+button:hover {
+  background: #e63600;
+}
+
+button {
+  height: 35px;
+}
+
+.title h1 {
+  text-align: center;
+  font-weight: bold;
+  color: #171c24;
+  margin-bottom: 8px;
+}
+
+.title hr {
+  border: 2px solid #171c24;
+  border-radius: 30px;
+  margin: auto;
+  align-items: center;
+}
+
+.title #hr1 {
+  width: 70%;
+  margin-bottom: 5px;
+}
+
+.title #hr2 {
+  width: 60%;
+  margin-bottom: 10px;
 }

@@ -57,7 +57,11 @@ export function ContactComponent() {
 
   return (
     <div>
-      <h2>Contáctanos</h2>
+      <div className="title">
+      <h1>Contáctanos</h1>
+      <hr id="hr1"/>
+      <hr id="hr2"/>
+      </div>
       <p>Si tiene alguna duda o comentario, puede ponerse en contacto con nosotros.</p>
       <br />
       <div className="contact-container">
