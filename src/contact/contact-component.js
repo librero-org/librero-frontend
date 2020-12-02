@@ -64,8 +64,8 @@ export function ContactComponent() {
       </div>
       <p>Si tiene alguna duda o comentario, puede ponerse en contacto con nosotros.</p>
       <br />
-      <div className="contact-container">
-        <form className="form-contact" onSubmit={handleSubmit} >
+      <div className="form-small-container">
+        <form className="form-small" onSubmit={handleSubmit} >
           <p>Por favor, llena los campos requeridos.</p>
           <h4>Nombre: *</h4>
           <input type="text" name="name" ref={(node => name = node)} pattern="[A-Za-z]{1,40}" title="Solo letras mayúsculas o minúsculas" maxLength="40" required />

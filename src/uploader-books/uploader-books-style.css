@@ -1,0 +1,40 @@
+#input-file {
+  display: none;
+}
+
+input#input-file+label {
+  padding: 0px 8px 8px 8px;
+  color: #fff;
+  background: #ff3d00;
+  border: none;
+  border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+input#input-file+label:hover {
+  background: #e63600;
+}
+
+.text {
+  float: left;
+  background-color: #ffffff;
+  color: #000000;
+  display: inline;
+  height: 30px;
+  width: 80%;
+  padding: 3px 0px 0px 8px;
+  margin-left: 0px;
+}
+
+.icon_input2 {
+  float: left;
+  margin-left: 5px;
+  margin-top: 0px;
+  color: #171c24;
+  border-radius: 4px 0px 0px 4px;
+  background-color: #a8a8a8;
+  padding: 5px 7px;
+  width: 34px;
+  height: 30px;
+}
