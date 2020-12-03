@@ -1,4 +1,3 @@
-import './contact-style.css';
 import React from 'react';
 import { useMutation, gql } from "@apollo/client";
 import Swal from 'sweetalert2';
@@ -68,14 +67,14 @@ export function ContactComponent() {
         <form className="form-small" onSubmit={handleSubmit} >
           <p>Por favor, llena los campos requeridos.</p>
           <h4>Nombre: *</h4>
-          <input type="text" name="name" ref={(node => name = node)} pattern="[A-Za-z]{1,40}" title="Solo letras mayúsculas o minúsculas" maxLength="40" required />
           <span className="fas fa-address-card icon_input"></span>
+          <input type="text" name="name" ref={(node => name = node)} pattern="[A-Za-z]{1,40}" title="Solo letras mayúsculas o minúsculas" maxLength="40" required />
           <h4>E-mail: </h4>
-          <input type="email" name="email" ref={(node => email = node)} required />
           <span className="fas fa-at icon_input"></span>
+          <input type="email" name="email" ref={(node => email = node)} required />
           <h4>Mensaje: *</h4>
+          <span className="fas fa-edit icon_input"></span>
           <textarea name="message" ref={(node => message = node)} maxLength="500" required />
-          <span className="fas fa-edit icon_textarea"></span>
           <button type="submit" className="fas fa-search"> Enviar</button>
         </form>
       </div>
