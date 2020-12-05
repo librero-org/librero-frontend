@@ -21,7 +21,7 @@ function ExchangeRates() {
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log(
-            "Titulo: " + title.value + "\nAutor: " + author.value + "\nFile: " + file
+            "Titulo: " + title.value + "\nAutor: " + author.value + "\nFile: " + file.files[0]
         );
         mutate({
             variables: {

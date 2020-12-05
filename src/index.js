@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
+import {createUploadLink} from 'apollo-upload-client';
 
 const client = new ApolloClient({
-  uri: " http://localhost:4000/",
+  uri: "http://localhost:4000/",
   cache: new InMemoryCache(),
+  link: createUploadLink({uri: "http://localhost:4000/"}),
 });
 
 ReactDOM.render(
